@@ -13,6 +13,7 @@ public class GemSilver : MonoBehaviour
     {
         GlobalScore.currentScore += 1000;
 
+        collectSound.volume = 0.25f;
         collectSound.Play();
         Destroy(gameObject);
     }
