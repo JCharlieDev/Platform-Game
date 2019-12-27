@@ -10,10 +10,13 @@ public class GlobalTimer : MonoBehaviour
 
     public bool isTakingTime = false;
 
+    public static int extendScore;
     public int seconds = 150;
 
     void Update()
     {
+        extendScore = seconds;
+
         if (isTakingTime == false)
         {
             StartCoroutine(SubstractSecond());

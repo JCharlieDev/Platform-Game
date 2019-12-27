@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1362651073}
-  m_IndirectSpecularColor: {r: 0.058494676, g: 0.08043196, b: 0.20593257, a: 1}
+  m_IndirectSpecularColor: {r: 0.05384201, g: 0.07401371, b: 0.18907538, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -698,7 +698,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score: 0'
+  m_Text: 'Total Score: 0'
 --- !u!222 &402444781
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2033,6 +2033,9 @@ MonoBehaviour:
   theScore: {fileID: 1087617802}
   totalScore: {fileID: 402444778}
   levelComplete: {fileID: 770303660}
+  timeCalc: 0
+  scoreCalc: 0
+  totalScored: 0
 --- !u!1 &856121222 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 87b70b92195974d9dacc05039e07b8cf,

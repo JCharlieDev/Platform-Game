@@ -21,7 +21,7 @@ public class LevelDeath : MonoBehaviour
         levelAudio.SetActive(false);
 
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
 
     }
 }
