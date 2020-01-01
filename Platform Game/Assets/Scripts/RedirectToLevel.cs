@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class RedirectToLevel : MonoBehaviour
 {
     public static int redirectToLevel;
+    public static int nextLevel;
     void Update()
     {
         if (redirectToLevel == 3)

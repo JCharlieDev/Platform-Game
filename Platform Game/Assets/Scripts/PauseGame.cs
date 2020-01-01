@@ -38,7 +38,7 @@ public class PauseGame : MonoBehaviour
     }
     public void RestartLevel()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(RedirectToLevel.redirectToLevel);
         ResumeGameplay();
     }
     public void QuitToMenu()
