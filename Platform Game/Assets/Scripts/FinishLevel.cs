@@ -10,6 +10,7 @@ public class FinishLevel : MonoBehaviour
     public GameObject timeLeft;
     public GameObject theScore;
     public GameObject totalScore;
+    public GameObject levelBlocker;
     public AudioSource levelComplete;
 
     public int timeCalc;
@@ -17,7 +18,9 @@ public class FinishLevel : MonoBehaviour
     public int totalScored;
 
     void OnTriggerEnter()
-    {       
+    {
+        GetComponent<BoxCollider>().enabled = false;
+
         timeCalc = GlobalTimer.extendScore * 100;
 
         timeLeft.GetComponent<Text>().text = "Time Left: " + GlobalTimer.extendScore + "x 100";
@@ -27,6 +30,10 @@ public class FinishLevel : MonoBehaviour
 
         levelMusic.SetActive(false);
         levelTimer.SetActive(false);
+        levelBlocker.SetActive(true);
+
+        //  Takes the objetc out of its parent.
+        levelBlocker.transform.parent = null;
 
         levelComplete.Play();
 
